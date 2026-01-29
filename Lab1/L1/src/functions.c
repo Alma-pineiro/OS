@@ -1,3 +1,5 @@
+#include "../include/functions.h"
+
 #include <ctype.h>
 
 /**
