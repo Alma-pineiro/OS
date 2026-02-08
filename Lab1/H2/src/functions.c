@@ -2,15 +2,12 @@
 #include <stddef.h>
 #include <math.h>
 
-int Calculate(float num1, float num2, char op, float *result){
-
-  if (result == NULL)
-    {
+int Calculate(float num1, float num2, char op, float *result) {
+    if (result == NULL) {
         return -1;
     }
 
-    switch (op)
-    {
+    switch (op) {
         case '+':
             *result = num1 + num2;
             break;
@@ -25,15 +22,14 @@ int Calculate(float num1, float num2, char op, float *result){
             break;
 
         case '/':
-            if (num2 == 0)
-            {
+            if (num2 == 0) {
                 return -1;
             }
             *result = num1 / num2;
             break;
 
         case '^':
-            *result = pow(num1, num2);
+            *result = powf(num1, num2);
             break;
 
         default:
@@ -41,5 +37,4 @@ int Calculate(float num1, float num2, char op, float *result){
     }
 
     return 0;
-
 }

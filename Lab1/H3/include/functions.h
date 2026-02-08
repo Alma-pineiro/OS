@@ -1,6 +1,5 @@
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
-
+#ifndef INCLUDE_FUNCTIONS_H_
+#define INCLUDE_FUNCTIONS_H_
 /**
  * @brief Represents a point in 2D space.
  */
@@ -17,4 +16,4 @@ typedef struct {
  */
 float CalculateDistance(Point p1, Point p2);
 
-#endif
+#endif  // INCLUDE_FUNCTIONS_H_
